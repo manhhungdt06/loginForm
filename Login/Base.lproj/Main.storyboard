@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
@@ -72,7 +72,7 @@
                                     <constraint firstAttribute="height" constant="47" id="yhs-79-OCp"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="22"/>
-                                <state key="normal" title="Sign In">
+                                <state key="normal" title="Login">
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                                 <connections>
@@ -109,37 +109,54 @@
                                     <action selector="editUser:" destination="BYZ-38-t0r" eventType="touchUpInside" id="fin-In-3iP"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Xz2-iJ-cEp">
+                                <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <rect key="contentStretch" x="0.14999999999999999" y="0.0" width="1" height="1"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="151" id="8QW-dt-A1N"/>
+                                    <constraint firstAttribute="height" constant="47" id="SZB-HY-eIu"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                <state key="normal" title="Sign in">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="action_signin:" destination="BYZ-38-t0r" eventType="touchUpInside" id="qOE-G3-Ard"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstAttribute="trailingMargin" secondItem="kzC-JK-eQD" secondAttribute="trailing" constant="40" id="1C0-B6-MX4"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="kzC-JK-eQD" secondAttribute="trailing" constant="42" id="1C0-B6-MX4"/>
                             <constraint firstItem="Zfw-de-HR8" firstAttribute="top" secondItem="749-GO-nkg" secondAttribute="bottom" constant="23" id="4PL-5y-Jnt"/>
                             <constraint firstItem="ewQ-ON-LU8" firstAttribute="leading" secondItem="bda-eB-3In" secondAttribute="trailing" constant="14" id="6OG-aB-KHi"/>
                             <constraint firstItem="fR7-qW-yi1" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="74" id="7rD-Y2-hKw"/>
                             <constraint firstAttribute="trailingMargin" secondItem="749-GO-nkg" secondAttribute="trailing" constant="54" id="8P4-mx-CRo"/>
                             <constraint firstItem="6Ul-nx-xFC" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="53" id="8gc-5M-iWT"/>
-                            <constraint firstItem="vGU-o7-uoD" firstAttribute="top" secondItem="Zfw-de-HR8" secondAttribute="bottom" constant="40" id="Hjh-99-hM6"/>
+                            <constraint firstItem="Xz2-iJ-cEp" firstAttribute="top" secondItem="Zfw-de-HR8" secondAttribute="bottom" constant="31" id="FUf-Pz-lN1"/>
+                            <constraint firstItem="vGU-o7-uoD" firstAttribute="top" secondItem="Zfw-de-HR8" secondAttribute="bottom" constant="138" id="Hjh-99-hM6"/>
                             <constraint firstItem="6Ul-nx-xFC" firstAttribute="top" secondItem="fR7-qW-yi1" secondAttribute="bottom" constant="16" id="MUv-yC-gnt"/>
                             <constraint firstAttribute="trailingMargin" secondItem="6Ul-nx-xFC" secondAttribute="trailing" constant="53" id="Obg-a6-s4C"/>
                             <constraint firstItem="bda-eB-3In" firstAttribute="top" secondItem="6Ul-nx-xFC" secondAttribute="bottom" constant="33" id="PKJ-7q-Vlq"/>
                             <constraint firstItem="fR7-qW-yi1" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="54" id="PcE-wE-EN4"/>
                             <constraint firstAttribute="trailingMargin" secondItem="fR7-qW-yi1" secondAttribute="trailing" constant="74" id="Rxh-Ct-vh5"/>
                             <constraint firstItem="749-GO-nkg" firstAttribute="top" secondItem="ewQ-ON-LU8" secondAttribute="bottom" constant="25" id="SpD-Es-vrI"/>
+                            <constraint firstItem="Xz2-iJ-cEp" firstAttribute="leading" secondItem="Zfw-de-HR8" secondAttribute="leading" id="Spg-BX-N60"/>
                             <constraint firstItem="ewQ-ON-LU8" firstAttribute="top" secondItem="6Ul-nx-xFC" secondAttribute="bottom" constant="36" id="Wsm-fx-N4r"/>
                             <constraint firstItem="z3f-y0-88S" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="60" id="Xq3-CH-zYI"/>
                             <constraint firstItem="bda-eB-3In" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="60" id="YYY-ep-RFb"/>
-                            <constraint firstItem="2ZC-k6-1rJ" firstAttribute="top" secondItem="Zfw-de-HR8" secondAttribute="bottom" constant="40" id="bhF-2h-UOR"/>
-                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="2ZC-k6-1rJ" secondAttribute="bottom" constant="154" id="d1W-Na-EKE"/>
-                            <constraint firstItem="kzC-JK-eQD" firstAttribute="top" secondItem="Zfw-de-HR8" secondAttribute="bottom" constant="40" id="eyi-Ps-zSm"/>
-                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="vGU-o7-uoD" secondAttribute="bottom" constant="154" id="gXV-Cl-ubP"/>
+                            <constraint firstItem="2ZC-k6-1rJ" firstAttribute="top" secondItem="Zfw-de-HR8" secondAttribute="bottom" constant="138" id="bhF-2h-UOR"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="2ZC-k6-1rJ" secondAttribute="bottom" constant="56" id="d1W-Na-EKE"/>
+                            <constraint firstItem="kzC-JK-eQD" firstAttribute="top" secondItem="Zfw-de-HR8" secondAttribute="bottom" constant="138" id="eyi-Ps-zSm"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="vGU-o7-uoD" secondAttribute="bottom" constant="56" id="gXV-Cl-ubP"/>
                             <constraint firstAttribute="trailingMargin" secondItem="ewQ-ON-LU8" secondAttribute="trailing" constant="54" id="gcE-df-mUQ"/>
                             <constraint firstItem="z3f-y0-88S" firstAttribute="top" secondItem="bda-eB-3In" secondAttribute="bottom" constant="18" id="ir5-Ac-fj7"/>
-                            <constraint firstItem="2ZC-k6-1rJ" firstAttribute="leading" secondItem="vGU-o7-uoD" secondAttribute="trailing" constant="46" id="jQU-9T-l2c"/>
+                            <constraint firstItem="2ZC-k6-1rJ" firstAttribute="leading" secondItem="vGU-o7-uoD" secondAttribute="trailing" constant="43" id="jQU-9T-l2c"/>
                             <constraint firstItem="749-GO-nkg" firstAttribute="leading" secondItem="z3f-y0-88S" secondAttribute="trailing" constant="14" id="k5w-oM-rrO"/>
                             <constraint firstItem="Zfw-de-HR8" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="96" id="mVd-wO-kjh"/>
-                            <constraint firstItem="vGU-o7-uoD" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="50" id="nTm-2j-W07"/>
-                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="kzC-JK-eQD" secondAttribute="bottom" constant="154" id="t56-yN-9Ei"/>
-                            <constraint firstItem="kzC-JK-eQD" firstAttribute="leading" secondItem="2ZC-k6-1rJ" secondAttribute="trailing" constant="57" id="tAQ-PX-tos"/>
+                            <constraint firstItem="vGU-o7-uoD" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="53" id="nTm-2j-W07"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="kzC-JK-eQD" secondAttribute="bottom" constant="56" id="t56-yN-9Ei"/>
+                            <constraint firstItem="kzC-JK-eQD" firstAttribute="leading" secondItem="2ZC-k6-1rJ" secondAttribute="trailing" constant="55" id="tAQ-PX-tos"/>
                             <constraint firstAttribute="trailingMargin" secondItem="Zfw-de-HR8" secondAttribute="trailing" constant="96" id="vmW-xi-Sj5"/>
                         </constraints>
                     </view>
